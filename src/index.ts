@@ -61,6 +61,6 @@ async function generateEPUB() {
   const ss = await parseOPML(appConfig);
   console.log(ss);
   const parsedRSSResults = await pullAllFeeds(ss, appConfig.timezone);
-  console.log(parsedRSSResults);
+
   // save to disk
 })();

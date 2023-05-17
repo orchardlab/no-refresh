@@ -36,7 +36,7 @@ export async function pullAllFeeds(
       console.log(`Parsing ${xmlUrl}`);
       const parsed = await parser.parseURL(xmlUrl);
       finalResults.push(parsed);
-      console.log(parsed);
+      console.log(`${parsed.title} - ${parsed.items.length}`);
     } catch (error) {}
   }
   return finalResults;
