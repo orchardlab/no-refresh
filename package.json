@@ -1,0 +1,21 @@
+{
+  "name": "no-refresh",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon dist/index.js",
+    "build": "tsc",
+    "watch": "tsc -w",
+    "dev": "yarn watch & yarn start"
+  },
+  "dependencies": {
+    "@postlight/parser": "^2.2.3",
+    "rss-parser": "^3.13.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  }
+}
